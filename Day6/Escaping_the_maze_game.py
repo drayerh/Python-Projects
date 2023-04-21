@@ -9,7 +9,10 @@ def turn_right():
     turn_left()
     turn_left()
 
-    
+while front_is_clear():
+    move()
+turn_left()
+
 while not at_goal():
     if right_is_clear():
         turn_right()
@@ -19,5 +22,5 @@ while not at_goal():
     else:
         turn_left()
 
-#To debug infinite loop error on Day 15
-#When Reeborg starts from the center an infinite loop can be encountered
+#To avoid infinite loop error, the first while loop has been put in place for Reeborg.
+# #When Reeborg starts from the center an infinite loop can be encountered
